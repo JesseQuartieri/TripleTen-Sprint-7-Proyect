@@ -4,7 +4,7 @@ import streamlit as st
 
 # Configuración de la página
 st.set_page_config(page_title="Análisis de Vehículos", layout="wide")
-st.title("📊 Análisis de Anuncios de Venta de Coches")
+st.title("📊 Análisis de Anuncios de Venta de Coches histograma")
 
 # Cargar los datos con manejo de errores
 try:
@@ -14,7 +14,7 @@ except FileNotFoundError:
     st.stop()
 
 # Botón para construir el histograma
-hist_button = st.button('Construir histograma de kilometraje', use_container_width=True)
+hist_button = st.button('Construir histograma de kilometraje')
 
 if hist_button:  # Cuando el usuario hace clic en el botón
     # Mensaje informativo
@@ -51,7 +51,7 @@ if hist_button:  # Cuando el usuario hace clic en el botón
  
 # Configuración de la página
 st.set_page_config(page_title="Análisis de Vehículos", layout="wide")
-st.title("📊 Análisis de Anuncios de Venta de Coches")
+st.title("📊 Análisis de Anuncios de Venta de Coches Gráfico de dispersión'")
 
 # Cargar los datos con manejo de errores
 try:
